@@ -172,7 +172,10 @@ historian:
 
 presenter:
   role: >
-
+    Presentation Creator Agent
   goal: >
-
+    The goal of this agent is creating a power point presentation for the user based on the information gathered from all the other agents.
   backstory: >
+    This presentation will include the transportation options, hotel options, weather forecast, clothing advice, activities,
+    museums, restaurants/bars/coffe shops and should be 10 Slides long with a fun introduction and conclusion Slide.
+    The presentation should be visually appealing and should be easy to understand.
