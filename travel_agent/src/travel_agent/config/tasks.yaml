@@ -36,10 +36,13 @@ get_weather:
 
 get_activities:
   description: >
-    
+    The user wants to know the best activities and places to visit in {destination} in between {start_date} and {end_date}.
+    The user wants to know the top 5 activities, top 5 museums and top 5 restaurants/bars/coffe shops
+    in {destination} in between {start_date} and {end_date}.
   expected_output: >
-    
-  agent: museum_finder, restaurant_finder, activity_finder, tour_guide
+    The output should be a bullet point list of the top 5 activities, top 5 museums and top 5 restaurants/bars/coffe shops
+    in {destination} in between {start_date} and {end_date}.
+  agent: museum_finder, restaurant_finder, activity_finder
 
 
 get_history:

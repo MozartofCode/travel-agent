@@ -118,18 +118,6 @@ activity_finder:
     The user wants to know the price of each activity and how much other people enjoyed it (other tourists).
 
 
-tour_guide:
-  role: >
-    Tour Guide Agent
-  goal: >
-    The goal of this agent is guiding the user through the best activities and places to visit in {destination} 
-    in between {start_date} and {end_date} based on the possible activities, museums, restaurants/bars/coffe shops/coffe shops/coffe shops.
-  backstory: >
-    The user wants to visit {destination} in between {start_date} and {end_date}. 
-    The user wants to know the best activities and places to visit in {destination} in between {start_date} and {end_date}.
-    List the top 5 activities, top 5 museums and top 5 restaurants/bars/coffe shops/coffe shops/coffe shops in {destination} in between {start_date} and {end_date}.
-
-
 historian:
   role: >
     Historian Agent
