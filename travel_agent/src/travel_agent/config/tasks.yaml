@@ -47,9 +47,12 @@ get_activities:
 
 get_history:
   description: >
-    
+    The user wants to know the history of {destination} so that they can learn more about the place they are visiting.
+    The user wants to know the history of {destination} in terms of the historical events, historical places and historical
+    figures of {destination} as well as fun facts.
   expected_output: >
-    
+    The output should be a paragraph of 4 sentences of the historical events, historical places and historical figures of 
+    {destination} as well as fun facts.
   agent: historian
 
 
