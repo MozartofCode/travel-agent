@@ -12,7 +12,7 @@ class TravelAgentCrew():
 	def train_finder(self) -> Agent:
 		return Agent(
 			config=self.agents_config['train_finder'],
-			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
+			tools=[SerperDevTool()],
 			verbose=True
 		)
 	
@@ -20,7 +20,7 @@ class TravelAgentCrew():
 	def flight_finder(self) -> Agent:
 		return Agent(
 			config=self.agents_config['flight_finder'],
-			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
+			tools=[SerperDevTool()],
 			verbose=True
 		)
 	
@@ -29,7 +29,7 @@ class TravelAgentCrew():
 	def car_rental_finder(self) -> Agent:
 		return Agent(
 			config=self.agents_config['car_rental_finder'],
-			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
+			tools=[SerperDevTool()],
 			verbose=True
 		)
 	
@@ -37,7 +37,7 @@ class TravelAgentCrew():
 	def hotel_finder(self) -> Agent:
 		return Agent(
 			config=self.agents_config['hotel_finder'],
-			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
+			tools=[SerperDevTool()],
 			verbose=True
 		)
 	
@@ -45,7 +45,7 @@ class TravelAgentCrew():
 	def airbnb_finder(self) -> Agent:
 		return Agent(
 			config=self.agents_config['airbnb_finder'],
-			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
+			tools=[SerperDevTool()],
 			verbose=True
 		)
 	
@@ -53,7 +53,7 @@ class TravelAgentCrew():
 	def weatherman(self) -> Agent:
 		return Agent(
 			config=self.agents_config['weatherman'],
-			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
+			tools=[SerperDevTool()],
 			verbose=True
 		)
 	
@@ -61,7 +61,7 @@ class TravelAgentCrew():
 	def clothing_advisor(self) -> Agent:
 		return Agent(
 			config=self.agents_config['clothing_advisor'],
-			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
+			tools=[SerperDevTool()],
 			verbose=True
 		)
 	
@@ -69,7 +69,7 @@ class TravelAgentCrew():
 	def museum_finder(self) -> Agent:
 		return Agent(
 			config=self.agents_config['museum_finder'],
-			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
+			tools=[SerperDevTool()],
 			verbose=True
 		)
 	
@@ -77,7 +77,7 @@ class TravelAgentCrew():
 	def restaurant_finder(self) -> Agent:
 		return Agent(
 			config=self.agents_config['restaurant_finder'],
-			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
+			tools=[SerperDevTool()],
 			verbose=True
 		)
 	
@@ -85,7 +85,7 @@ class TravelAgentCrew():
 	def activity_finder(self) -> Agent:
 		return Agent(
 			config=self.agents_config['activity_finder'],
-			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
+			tools=[SerperDevTool()],
 			verbose=True
 		)
 	
@@ -93,7 +93,7 @@ class TravelAgentCrew():
 	def historian(self) -> Agent:
 		return Agent(
 			config=self.agents_config['historian'],
-			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
+			tools=[SerperDevTool()],
 			verbose=True
 		)
 	
