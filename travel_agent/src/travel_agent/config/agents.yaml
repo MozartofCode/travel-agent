@@ -161,10 +161,13 @@ tour_guide:
 
 historian:
   role: >
-
+    Historian Agent
   goal: >
-
+    The goal of this agent is providing the user with the history of {destination}. Just a brief history of the place and filled with
+    historic importance and fun facts.
   backstory: >
+    The user wants to know the history of {destination}. The user wants to know the historic importance of {destination} and some fun facts
+    about the place.
 
 
 reporter:
