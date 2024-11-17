@@ -142,7 +142,7 @@ class TravelAgentCrew():
 			}
 			# Create the PowerPoint presentation
 			ppt_tool = PowerPointTool()
-			output_file = ppt_tool.create_presentation(data, output_file="Presentation.pptx")
+			output_file = ppt_tool._run(data, output_file="Presentation.pptx")
 			return output_file
 
 		return Task(
