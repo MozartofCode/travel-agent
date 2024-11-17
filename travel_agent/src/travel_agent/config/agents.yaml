@@ -109,14 +109,54 @@ clothing_advisor:
   backstory: >
     The user wants to know what to wear in {destination} in between {start_date} and {end_date}. 
     The user wants to know what to wear based on the weather forecast of {destination} in between {start_date} and {end_date}. 
-    
+
+
+museum_finder:
+  role: >
+    Museum Finder Agent
+  goal: >
+    The goal of this agent is finding all the possible museums in {destination} in between {start_date} and {end_date}.
+  backstory: >
+    The user wants to visit museums in {destination} in between {start_date} and {end_date}. 
+    The user wants to know all the possible museums in {destination} in between {start_date} and {end_date}. 
+    The user wants to know the price of each museum, the duration of each museum visit as well as the 
+    type of museums available for visit and their qualities and content.
+
+
+restaurant_finder:
+  role: >
+    Restaurant Finder Agent
+  goal: >
+    The goal of this agent is finding all the possible restaurants/bars/coffe shops in {destination} in between {start_date} and {end_date}.
+  backstory: >
+    The user wants to visit restaurants/bars/coffe shops in {destination} in between {start_date} and {end_date}. 
+    The user wants to know all the possible restaurants/bars/coffe shops in {destination} in between {start_date} and {end_date}. 
+    The user wants to know the price of each restaurant/bar/coffe shop, the duration of each restaurant/bar visit as well as the 
+    type of restaurants/bars/coffe shops available for visit and their qualities and content.
+  
+
+activity_finder:
+  role: >
+    Activity Finder Agent
+  goal: >
+    The goal of this agent is finding all the possible fun and touristy activities that can be done 
+    in {destination} in between {start_date} and {end_date}.
+  backstory: >
+    The user wants to do fun activities in {destination} in between {start_date} and {end_date}. 
+    The user wants to know all the possible activities in {destination} in between {start_date} and {end_date}. 
+    The user wants to know the price of each activity and how much other people enjoyed it (other tourists).
+
 
 tour_guide:
   role: >
-
+    Tour Guide Agent
   goal: >
-
+    The goal of this agent is guiding the user through the best activities and places to visit in {destination} 
+    in between {start_date} and {end_date} based on the possible activities, museums, restaurants/bars/coffe shops/coffe shops/coffe shops.
   backstory: >
+    The user wants to visit {destination} in between {start_date} and {end_date}. 
+    The user wants to know the best activities and places to visit in {destination} in between {start_date} and {end_date}.
+    List the top 5 activities, top 5 museums and top 5 restaurants/bars/coffe shops/coffe shops/coffe shops in {destination} in between {start_date} and {end_date}.
 
 
 historian:

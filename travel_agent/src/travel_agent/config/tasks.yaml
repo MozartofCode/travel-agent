@@ -26,7 +26,7 @@ get_activities:
     
   expected_output: >
     
-  agent: tour_guide
+  agent: museum_finder, restaurant_finder, activity_finder, tour_guide
 
 
 get_history:
