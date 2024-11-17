@@ -58,8 +58,12 @@ get_history:
 
 get_presentation:
   description: >
-    
+    The user wants to get a power point presentation of their trip to {destination} in between {start_date} and {end_date} that includes
+    the best transportation options, the best hotel and AirBnB options, the weather forecast, the best activities and places to visit
+    and the history of {destination}.
   expected_output: >
-    
-  agent: presenter
-
+    This presentation will include the transportation options, hotel options, weather forecast, clothing advice, activities,
+    museums, restaurants/bars/coffe shops and should be 10 Slides long with a fun introduction and conclusion Slide.
+    The presentation should be visually appealing and should be easy to understand. Find visually appealing images for each slide.  
+  agent: train_finder, flight_finder, car_rental_finder, hotel_finder, airbnb_finder, weatherman, clothing_advisor, museum_finder, 
+  restaurant_finder, activity_finder, historian
