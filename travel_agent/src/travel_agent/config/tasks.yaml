@@ -13,10 +13,20 @@ find_transportation:
 
 find_hotel:
   description: >
-    
+    The user wants to know all the possible hotel and AirBnB options in {destination} in between {start_date} and {end_date}. 
+    The user wants to know the price of each hotel and AirBnB, the duration of each hotel and AirBnB stay as well as the 
+    type of hotel and AirBnB available for stay and their qualities. Lastly, out of all the hotel and AirBnB options, 
+    the user wants to know the best options from each category (hotel and AirBnB) in terms of price, quality and amenities.    
   expected_output: >
-    
-  agent: hotel_finder, airbnb_finder, hotelier
+    The output should a bullet point list of the best 2 options from each category (hotel and AirBnB) in terms of 
+    price, quality and amenities.
+  agent: hotel_finder, airbnb_finder
+
+
+
+
+
+
 
 
 get_weather:
