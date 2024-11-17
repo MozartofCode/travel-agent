@@ -23,17 +23,14 @@ find_hotel:
   agent: hotel_finder, airbnb_finder
 
 
-
-
-
-
-
-
 get_weather:
   description: >
-    
+    The user wants to know the weather forecast of {destination} in between {start_date} and {end_date} so that they can
+    prepare for the trip accordingly. The user wants to know the temperature, humidity and precipitation forecast for each day.
+    And they want to know should they bring/wear for their trip (clothing, umberella etc). 
   expected_output: >
-    
+    The output should be a list of the weather forecast for each day in between {start_date} and {end_date} and the 
+    list of items that the user should bring/wear for the trip for each day.
   agent: weatherman, clothing_advisor
 
 
