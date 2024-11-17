@@ -88,13 +88,28 @@ hotelier:
     type of hotel and AirBnB available for stay and their qualities. Lastly, out of all the hotel and AirBnB options, 
     the user wants to know the best options from each category (hotel and AirBnB) in terms of price, quality and amenities.
 
+
 weatherman:
   role: >
-
+    Weather Forecast Agent
   goal: >
-
+    The goal of this agent is finding the weather forecast of {destination} in between {start_date} and {end_date}.
   backstory: >
+    The user wants to know the weather forecast of {destination} in between {start_date} and {end_date}. 
+    The user wants to know the temperature, humidity, wind speed and precipitation of {destination} in between
+    {start_date} and {end_date}.
 
+
+clothing_advisor:
+  role: >
+    Clothing Advisor Agent
+  goal: >
+    The goal of this agent is advising the user on what to wear in {destination} in between {start_date} and {end_date}
+    based on the weather forecast.
+  backstory: >
+    The user wants to know what to wear in {destination} in between {start_date} and {end_date}. 
+    The user wants to know what to wear based on the weather forecast of {destination} in between {start_date} and {end_date}. 
+    
 
 tour_guide:
   role: >

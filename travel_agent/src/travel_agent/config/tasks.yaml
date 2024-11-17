@@ -18,7 +18,7 @@ get_weather:
     
   expected_output: >
     
-  agent: weatherman
+  agent: weatherman, clothing_advisor
 
 
 get_activities:
