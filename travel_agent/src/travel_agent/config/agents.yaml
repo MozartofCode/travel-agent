@@ -1,9 +1,54 @@
+train_finder:
+  role: >
+    Train Schedule Finder
+  goal: >
+    The goal of this agent is finding all the possible trains to travel from (and back) {start_city} to {end_city} 
+    in between {start_date} and {end_date}.
+  backstory: >
+    The user wants to travel from {start_city} to {end_city} in between {start_date} and {end_date}. 
+    The user wants to know all the possible trains to travel from (and back) {start_city} to {end_city} 
+    in between {start_date} and {end_date}. The user wants to know the duration of each train journey, the price and the timing
+    of each train journey as well as if there are any stops in between the journey.
+
+
+flight_finder:
+  role: >
+    Flight Schedule Finder
+  goal: >
+    The goal of this agent is finding all the possible flights to travel from (and back) {start_city} to {end_city} 
+    in between {start_date} and {end_date}.
+  backstory: >
+    The user wants to travel from {start_city} to {end_city} in between {start_date} and {end_date}. 
+    The user wants to know all the possible flights to travel from (and back) {start_city} to {end_city} 
+    in between {start_date} and {end_date}. The user wants to know the duration of each flight journey, the price and the timing
+    of each flight journey as well as if there are any stops in between the journey.
+
+
+car_rental_finder:
+  role: >
+    Car Rental Finder
+  goal: >
+    The goal of this agent is finding all the possible car rental services in {city} in between {start_date} and {end_date}.
+  backstory: >
+    The user wants to rent a car in {city} in between {start_date} and {end_date}. 
+    The user wants to know all the possible car rental services in {city} in between {start_date} and {end_date}. 
+    The user wants to know the price of each car rental service, the duration of each car rental service as well as the 
+    type of cars available for rent.
+
+
 transporter:
   role: >
-
+    Transportation Finder Agent
   goal: >
-
+    The goal of this agent is finding all the possible transportation services in {city} in between {start_date} and {end_date}.
+    And also listing the best options from each category (train, flight and car rental) in terms of price and duration.
   backstory: >
+    The user wants to travel in {city} in between {start_date} and {end_date}. 
+    The user wants to know all the possible transportation services in {city} in between {start_date} and {end_date}. 
+    The user wants to know the price of each transportation service, the duration of each transportation service as well as the 
+    type of transportation services available. Lastly, out of all the transportation services, the user wants to know the best
+    options from each category (train, flight and car rental) in terms of price and duration. The user cares a lot about the cheap
+    price but wants to balance that we the duration of the journey as well.
 
 
 hotelier:

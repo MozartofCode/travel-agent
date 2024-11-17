@@ -3,8 +3,7 @@ find_transportation:
     
   expected_output: >
     
-  agent: transporter
-
+  agent: train_finder, flight_finder, car_rental_finder, transporter
 
 find_hotel:
   description: >
