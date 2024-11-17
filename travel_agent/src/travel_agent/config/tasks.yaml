@@ -5,6 +5,7 @@ find_transportation:
     
   agent: train_finder, flight_finder, car_rental_finder, transporter
 
+
 find_hotel:
   description: >
     
@@ -35,13 +36,6 @@ get_history:
   expected_output: >
     
   agent: historian
-
-get_report:
-  description: >
-    
-  expected_output: >
-    
-  agent: reporter
 
 
 get_presentation:
