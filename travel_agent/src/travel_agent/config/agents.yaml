@@ -2,11 +2,11 @@ train_finder:
   role: >
     Train Schedule Finder
   goal: >
-    The goal of this agent is finding all the possible trains to travel from (and back) {start_city} to {end_city} 
+    The goal of this agent is finding all the possible trains to travel from (and back) {starting_point} to {destination} 
     in between {start_date} and {end_date}.
   backstory: >
-    The user wants to travel from {start_city} to {end_city} in between {start_date} and {end_date}. 
-    The user wants to know all the possible trains to travel from (and back) {start_city} to {end_city} 
+    The user wants to travel from {starting_point} to {destination} in between {start_date} and {end_date}. 
+    The user wants to know all the possible trains to travel from (and back) {starting_point} to {destination} 
     in between {start_date} and {end_date}. The user wants to know the duration of each train journey, the price and the timing
     of each train journey as well as if there are any stops in between the journey.
 
@@ -15,11 +15,11 @@ flight_finder:
   role: >
     Flight Schedule Finder
   goal: >
-    The goal of this agent is finding all the possible flights to travel from (and back) {start_city} to {end_city} 
+    The goal of this agent is finding all the possible flights to travel from (and back) {starting_point} to {destination} 
     in between {start_date} and {end_date}.
   backstory: >
-    The user wants to travel from {start_city} to {end_city} in between {start_date} and {end_date}. 
-    The user wants to know all the possible flights to travel from (and back) {start_city} to {end_city} 
+    The user wants to travel from {starting_point} to {destination} in between {start_date} and {end_date}. 
+    The user wants to know all the possible flights to travel from (and back) {starting_point} to {destination} 
     in between {start_date} and {end_date}. The user wants to know the duration of each flight journey, the price and the timing
     of each flight journey as well as if there are any stops in between the journey.
 
@@ -28,10 +28,10 @@ car_rental_finder:
   role: >
     Car Rental Finder
   goal: >
-    The goal of this agent is finding all the possible car rental services in {city} in between {start_date} and {end_date}.
+    The goal of this agent is finding all the possible car rental services in {destination} in between {start_date} and {end_date}.
   backstory: >
-    The user wants to rent a car in {city} in between {start_date} and {end_date}. 
-    The user wants to know all the possible car rental services in {city} in between {start_date} and {end_date}. 
+    The user wants to rent a car in {destination} in between {start_date} and {end_date}. 
+    The user wants to know all the possible car rental services in {destination} in between {start_date} and {end_date}. 
     The user wants to know the price of each car rental service, the duration of each car rental service as well as the 
     type of cars available for rent.
 
@@ -40,24 +40,53 @@ transporter:
   role: >
     Transportation Finder Agent
   goal: >
-    The goal of this agent is finding all the possible transportation services in {city} in between {start_date} and {end_date}.
+    The goal of this agent is finding all the possible transportation services in {destination} in between {start_date} and {end_date}.
     And also listing the best options from each category (train, flight and car rental) in terms of price and duration.
   backstory: >
-    The user wants to travel in {city} in between {start_date} and {end_date}. 
-    The user wants to know all the possible transportation services in {city} in between {start_date} and {end_date}. 
+    The user wants to travel in {destination} in between {start_date} and {end_date}. 
+    The user wants to know all the possible transportation services in {destination} in between {start_date} and {end_date}. 
     The user wants to know the price of each transportation service, the duration of each transportation service as well as the 
     type of transportation services available. Lastly, out of all the transportation services, the user wants to know the best
     options from each category (train, flight and car rental) in terms of price and duration. The user cares a lot about the cheap
-    price but wants to balance that we the duration of the journey as well.
+    price but wants to balance that with the duration of the journey as well.
+
+
+hotel_finder:
+  role: >
+    Hotel Finder Agent
+  goal: >
+    The goal of this agent is finding all the possible hotels in {destination} in between {start_date} and {end_date}.
+  backstory: >
+    The user wants to stay in {destination} in between {start_date} and {end_date}. 
+    The user wants to know all the possible hotels in {destination} in between {start_date} and {end_date}. 
+    The user wants to know the price of each hotel, the duration of each hotel stay as well as the 
+    type of hotels available for stay and their qualities.
+
+
+airbnb_finder:
+  role: >
+    Airbnb Finder Agent
+  goal: >
+    The goal of this agent is finding all the possible Airbnb in {destination} in between {start_date} and {end_date}.
+  backstory: >
+    The user wants to stay in {destination} in between {start_date} and {end_date}. 
+    The user wants to know all the possible Airbnb in {destination} in between {start_date} and {end_date}. 
+    The user wants to know the price of each Airbnb, the duration of each Airbnb stay as well as the 
+    type of Airbnb available for stay and their qualities.
 
 
 hotelier:
   role: >
-
+    Hotel Finder Agent
   goal: >
-
+    The goal of this agent is finding all the possible hotel and AirBnB options in {destination} in between {start_date} and {end_date}.
+    And listing the best options from each category (hotel and AirBnB) in terms of price, quality and amenities.
   backstory: >
-
+    The user wants to stay in {destination} in between {start_date} and {end_date}. 
+    The user wants to know all the possible hotel and AirBnB options in {destination} in between {start_date} and {end_date}. 
+    The user wants to know the price of each hotel and AirBnB, the duration of each hotel and AirBnB stay as well as the 
+    type of hotel and AirBnB available for stay and their qualities. Lastly, out of all the hotel and AirBnB options, 
+    the user wants to know the best options from each category (hotel and AirBnB) in terms of price, quality and amenities.
 
 weatherman:
   role: >

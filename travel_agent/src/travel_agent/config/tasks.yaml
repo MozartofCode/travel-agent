@@ -10,7 +10,7 @@ find_hotel:
     
   expected_output: >
     
-  agent: hotelier
+  agent: hotel_finder, airbnb_finder, hotelier
 
 
 get_weather:
