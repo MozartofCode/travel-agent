@@ -1,9 +1,14 @@
 find_transportation:
   description: >
-    
+    The goal is finding all the possible transportation services in {destination} in between {start_date} and {end_date}.
+    And looking into the best options from each category (train, flight and car rental) in terms of price and duration.
+    The user wants to know the price of each transportation service, the duration of each transportation service as well as the 
+    type of transportation services available. The user cares a lot about the cheap price but wants to balance that with the
+    duration of the journey as well.
   expected_output: >
-    
-  agent: train_finder, flight_finder, car_rental_finder, transporter
+    The output should a bullet point list of the best options from each category (train, flight and car rental) in terms 
+    of price and duration of the trip.
+  agent: train_finder, flight_finder, car_rental_finder
 
 
 find_hotel:

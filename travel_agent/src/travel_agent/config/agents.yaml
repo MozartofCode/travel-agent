@@ -36,21 +36,6 @@ car_rental_finder:
     type of cars available for rent.
 
 
-transporter:
-  role: >
-    Transportation Finder Agent
-  goal: >
-    The goal of this agent is finding all the possible transportation services in {destination} in between {start_date} and {end_date}.
-    And also listing the best options from each category (train, flight and car rental) in terms of price and duration.
-  backstory: >
-    The user wants to travel in {destination} in between {start_date} and {end_date}. 
-    The user wants to know all the possible transportation services in {destination} in between {start_date} and {end_date}. 
-    The user wants to know the price of each transportation service, the duration of each transportation service as well as the 
-    type of transportation services available. Lastly, out of all the transportation services, the user wants to know the best
-    options from each category (train, flight and car rental) in terms of price and duration. The user cares a lot about the cheap
-    price but wants to balance that with the duration of the journey as well.
-
-
 hotel_finder:
   role: >
     Hotel Finder Agent
