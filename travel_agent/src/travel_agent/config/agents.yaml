@@ -127,3 +127,33 @@ historian:
   backstory: >
     The user wants to know the history of {destination}. The user wants to know the historic importance of {destination} and some fun facts
     about the place.
+
+
+reporter_agent:
+  role: >
+    Report Creation Coordinating Agent
+  goal: >
+    The goal of this agent is coordinating the creation of a report for the user based on the user's travel plans by using other agents.
+  backstory: >
+    The user wants to create a report based on his/her travel plans. The user wants to know all the details of his/her travel plans in one
+    place. The user wants to know the details of the trains, flights, car rentals, hotels, Airbnbs, weather forecast, clothing advice, museums,
+    restaurants, activities and the history of the place. The user wants to know all the details in one place in a report format.
+  capabilities:
+      - "coordinate_tasks"
+      - "aggregate_results"
+      - "generate_report"
+
+
+presenter_agent:
+  role: >
+    Presentation Creation Coordinating Agent
+  goal: >
+    The goal of this agent is coordinating the creation of a presentation for the user based on the user's travel plans by using other agents.
+  backstory: >
+    The user wants to create a presentation based on his/her travel plans. The user wants to know all the details of his/her travel plans in one
+    place. The user wants to know the details of the trains, flights, car rentals, hotels, Airbnbs, weather forecast, clothing advice, museums,
+    restaurants, activities and the history of the place. The user wants to know all the details in one place in a presentation format.
+  capabilities:
+      - "coordinate_tasks"
+      - "aggregate_results"
+      - "generate_presentation"

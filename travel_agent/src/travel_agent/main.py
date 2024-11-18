@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import sys
-from travel_agent.crew import TravelAgentCrew
-
+from travel_agent.src.travel_agent.crew import TravelAgentCrew
 
 def create_report(starting_point: str, destination: str, start_date: str, end_date: str):
     """

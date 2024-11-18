@@ -1,7 +1,16 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from travel_agent.tools.custom_tool import PowerPointTool
+from langchain_openai import ChatOpenAI
+from travel_agent.src.travel_agent.tools.custom_tool import PowerPointTool
 from crewai_tools import SerperDevTool
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+openai_api_key = os.getenv('OPENAI_API_KEY')
+serper_api_key = os.getenv('SERPER_API_KEY')
+os.environ["OPENAI_MODEL_NAME"] = 'gpt-3.5-turbo'
+
 
 @CrewBase
 class TravelAgentCrew():
@@ -94,6 +103,22 @@ class TravelAgentCrew():
 		return Agent(
 			config=self.agents_config['historian'],
 			tools=[SerperDevTool()],
+			verbose=True
+		)
+
+	
+	@agent
+	def reporter_agent(self) -> Agent:
+		return Agent(
+			config=self.agents_config['reporter_agent'],
+			verbose=True
+		)
+	
+	
+	@agent
+	def presenter_agent(self) -> Agent:
+		return Agent(
+			config=self.agents_config['presenter_agent'],
 			verbose=True
 		)
 	
@@ -217,6 +242,8 @@ class TravelAgentCrew():
 				self.get_report(),
 			],
 			verbose=True,
+			manager_agent=self.reporter_agent(),
+        	manager_llm=ChatOpenAI(model="gpt-3.5-turbo", temperature=0.7),
 			process=Process.hierarchical
 		)
 
@@ -246,5 +273,7 @@ class TravelAgentCrew():
 				self.get_report(),
 			],
 			verbose=True,
+			manager_agent=self.presenter_agent(),
+        	manager_llm=ChatOpenAI(model="gpt-3.5-turbo", temperature=0.7),
 			process=Process.hierarchical
 		)

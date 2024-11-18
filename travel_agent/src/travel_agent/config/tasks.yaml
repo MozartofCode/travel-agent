@@ -8,7 +8,10 @@ find_transportation:
   expected_output: >
     The output should a bullet point list of the best options from each category (train, flight and car rental) in terms 
     of price and duration of the trip.
-  agent: train_finder, flight_finder, car_rental_finder
+  agents: 
+    - train_finder
+    - flight_finder
+    - car_rental_finder
 
 
 find_hotel:
@@ -20,7 +23,9 @@ find_hotel:
   expected_output: >
     The output should a bullet point list of the best 2 options from each category (hotel and AirBnB) in terms of 
     price, quality and amenities.
-  agent: hotel_finder, airbnb_finder
+  agents: 
+    - hotel_finder
+    - airbnb_finder
 
 
 get_weather:
@@ -31,7 +36,9 @@ get_weather:
   expected_output: >
     The output should be a list of the weather forecast for each day in between {start_date} and {end_date} and the 
     list of items that the user should bring/wear for the trip for each day.
-  agent: weatherman, clothing_advisor
+  agents: 
+    - weatherman
+    - clothing_advisor
 
 
 get_activities:
@@ -42,7 +49,10 @@ get_activities:
   expected_output: >
     The output should be a bullet point list of the top 5 activities, top 5 museums and top 5 restaurants/bars/coffe shops
     in {destination} in between {start_date} and {end_date}.
-  agent: museum_finder, restaurant_finder, activity_finder
+  agents: 
+    - museum_finder
+    - restaurant_finder
+    - activity_finder
 
 
 get_history:
@@ -53,7 +63,7 @@ get_history:
   expected_output: >
     The output should be a paragraph of 4 sentences of the historical events, historical places and historical figures of 
     {destination} as well as fun facts.
-  agent: historian
+  agents: historian
 
 
 get_presentation:
@@ -65,8 +75,18 @@ get_presentation:
     This presentation will include the transportation options, hotel options, weather forecast, clothing advice, activities,
     museums, restaurants/bars/coffe shops and should be 10 Slides long with a fun introduction and conclusion Slide.
     The presentation should be visually appealing and should be easy to understand. Find visually appealing images for each slide.  
-  agent: train_finder, flight_finder, car_rental_finder, hotel_finder, airbnb_finder, weatherman, clothing_advisor, museum_finder, 
-  restaurant_finder, activity_finder, historian
+  agents: 
+    - train_finder
+    - flight_finder 
+    - car_rental_finder
+    - hotel_finder
+    - airbnb_finder
+    - weatherman
+    - clothing_advisor
+    - museum_finder
+    - restaurant_finder
+    - activity_finder
+    - historian
 
 
 get_report:
@@ -78,5 +98,15 @@ get_report:
     This report will include the transportation options, hotel options, weather forecast, clothing advice, activities,
     museums, restaurants/bars/coffe shops and should be 5 pages long with a fun introduction and conclusion page.
     The report should be visually appealing and should be easy to understand. Find visually appealing images for each page.
-  agent: train_finder, flight_finder, car_rental_finder, hotel_finder, airbnb_finder, weatherman, clothing_advisor, museum_finder,
-  restaurant_finder, activity_finder, historian
+  agents:
+    - train_finder
+    - flight_finder 
+    - car_rental_finder
+    - hotel_finder
+    - airbnb_finder
+    - weatherman
+    - clothing_advisor
+    - museum_finder
+    - restaurant_finder
+    - activity_finder
+    - historian
