@@ -270,7 +270,7 @@ class TravelAgentCrew():
 				self.get_weather(),
 				self.get_activities(),
 				self.get_history(),
-				self.get_report(),
+				self.get_presentation(),
 			],
 			verbose=True,
 			manager_agent=self.presenter_agent(),
