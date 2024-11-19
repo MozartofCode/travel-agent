@@ -129,17 +129,6 @@ historian:
     about the place.
 
 
-slide_maker:
-  role: >
-    Slide Creation Agent
-  goal: >
-    The goal of this agent is creating a slide presentation for the user based on the user's travel plans.
-  backstory: >
-    The user wants to create a slide based on his/her travel plans. The user wants to know all the details of his/her travel plans in one
-    place. The user wants to know the details of the trains, flights, car rentals, hotels, Airbnbs, weather forecast, clothing advice, museums,
-    restaurants, activities and the history of the place. The user wants to know all the details in one place in a slide format with 10 slides.
-
-
 reporter_agent:
   role: >
     Report Creation Coordinating Agent
@@ -153,17 +142,3 @@ reporter_agent:
       - "coordinate_tasks"
       - "aggregate_results"
       - "generate_report"
-
-
-presenter_agent:
-  role: >
-    Presentation Creation Coordinating Agent
-  goal: >
-    The goal of this agent is coordinating the creation of a presentation for the user based on the user's travel plans by using other agents.
-    After getting all the required information from every agent, it calls the slide_maker agent to create a slide presentation.
-  backstory: >
-    The user wants to create a presentation based on his/her travel plans. The user wants to know all the details of his/her travel plans in one
-    place. The user wants to know the details of the trains, flights, car rentals, hotels, Airbnbs, weather forecast, clothing advice, museums,
-    restaurants, activities and the history of the place. The user wants to know all the details in one place in a presentation format.
-  capabilities:
-      - "coordinate_tasks"

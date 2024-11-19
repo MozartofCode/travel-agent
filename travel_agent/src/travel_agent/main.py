@@ -2,9 +2,9 @@
 import sys
 from travel_agent.src.travel_agent.crew import TravelAgentCrew
 
-def create_report(starting_point: str, destination: str, start_date: str, end_date: str):
+def run_crew(starting_point: str, destination: str, start_date: str, end_date: str):
     """
-    Create a report the crew
+    Run the crew
     """
     inputs = {
         'starting_point': starting_point,
@@ -13,22 +13,20 @@ def create_report(starting_point: str, destination: str, start_date: str, end_da
         'end_date': end_date
     }
 
-    TravelAgentCrew().reporter_crew().kickoff(inputs=inputs)
+    TravelAgentCrew().crew().kickoff(inputs=inputs)
 
 
-def create_presentation(starting_point: str, destination: str, start_date: str, end_date: str):
-    """
-    Create a presentation
-    """
+def create_report():
     
-    inputs = {
-        'starting_point': starting_point,
-        'destination': destination,
-        'start_date': start_date,
-        'end_date': end_date
-    }
+    # Uses the report.json file
 
-    TravelAgentCrew().presenter_crew().kickoff(inputs=inputs)
+    return
+
+def create_presentation():
+    
+    # Uses the report.json file
+
+    return
 
 
 def train():

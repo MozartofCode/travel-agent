@@ -64,32 +64,7 @@ get_history:
     The output should be a paragraph of 4 sentences of the historical events, historical places and historical figures of 
     {destination} as well as fun facts.
   agents: historian
-
-
-get_presentation:
-  description: >
-    The user wants to get a power point presentation of their trip to {destination} in between {start_date} and {end_date} that includes
-    the best transportation options, the best hotel and AirBnB options, the weather forecast, the best activities and places to visit
-    and the history of {destination}.
-  expected_output: >
-    This presentation will include the transportation options, hotel options, weather forecast, clothing advice, activities,
-    museums, restaurants/bars/coffe shops and should be 10 Slides long with a fun introduction and conclusion Slide.
-    The presentation should be visually appealing and should be easy to understand. Find visually appealing images for each slide. 
-    This presentation is created using the slide_maker agent at the end after gathering all the necessary information from other agents. 
-  agents: 
-    - train_finder
-    - flight_finder 
-    - car_rental_finder
-    - hotel_finder
-    - airbnb_finder
-    - weatherman
-    - clothing_advisor
-    - museum_finder
-    - restaurant_finder
-    - activity_finder
-    - historian
-    - slide_maker
-
+  
 
 get_report:
   description: >
