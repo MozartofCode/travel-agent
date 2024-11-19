@@ -74,7 +74,8 @@ get_presentation:
   expected_output: >
     This presentation will include the transportation options, hotel options, weather forecast, clothing advice, activities,
     museums, restaurants/bars/coffe shops and should be 10 Slides long with a fun introduction and conclusion Slide.
-    The presentation should be visually appealing and should be easy to understand. Find visually appealing images for each slide.  
+    The presentation should be visually appealing and should be easy to understand. Find visually appealing images for each slide. 
+    This presentation is created using the slide_maker agent at the end after gathering all the necessary information from other agents. 
   agents: 
     - train_finder
     - flight_finder 
@@ -87,6 +88,7 @@ get_presentation:
     - restaurant_finder
     - activity_finder
     - historian
+    - slide_maker
 
 
 get_report:
@@ -110,3 +112,5 @@ get_report:
     - restaurant_finder
     - activity_finder
     - historian
+
+  

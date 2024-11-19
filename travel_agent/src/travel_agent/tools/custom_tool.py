@@ -18,6 +18,7 @@ class PowerPointTool(BaseTool):
 
     def _run(self, data: dict, output_file: str = "Presentation.pptx") -> str:
         """Run the tool with provided data."""
+
         prs = Presentation()
         
         # Title Slide

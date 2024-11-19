@@ -105,6 +105,14 @@ class TravelAgentCrew():
 			tools=[SerperDevTool()],
 			verbose=True
 		)
+	
+	@agent
+	def slide_maker(self) -> Agent:
+		return Agent(
+			config=self.agents_config['slide_maker'],
+			tools=[SerperDevTool(), PowerPointTool()],
+			verbose=True
+		)
 
 	
 	@agent
@@ -157,18 +165,15 @@ class TravelAgentCrew():
 	@task
 	def get_presentation(self) -> Task:
 		def generate_presentation(subtask_results):
-			# Data structure for the presentation
-			data = {
-				"Transportation": subtask_results['find_transportation'],
-				"Accommodation": subtask_results['find_hotel'],
-				"Weather": subtask_results['get_weather'],
-				"Activities": subtask_results['get_activities'],
-				"History": subtask_results['get_history'],
+			presentation_data = {
+				"transportation": subtask_results['find_transportation'],
+				"hotel": subtask_results['find_hotel'],
+				"weather": subtask_results['get_weather'],
+				"activities": subtask_results['get_activities'],
+				"history": subtask_results['get_history'],
 			}
-			# Create the PowerPoint presentation
-			ppt_tool = PowerPointTool()
-			output_file = ppt_tool._run(data, output_file="Presentation.pptx")
-			return output_file
+			self.slide_maker().action(presentation_data)
+			return "Presentation created successfully."
 
 		return Task(
 			config=self.tasks_config['get_presentation'],
@@ -263,13 +268,9 @@ class TravelAgentCrew():
 				self.restaurant_finder(),
 				self.activity_finder(),
 				self.historian(),
+				self.slide_maker()
 			],
 			tasks=[
-				self.find_transportation(),
-				self.find_hotel(),
-				self.get_weather(),
-				self.get_activities(),
-				self.get_history(),
 				self.get_presentation(),
 			],
 			verbose=True,
