@@ -7,7 +7,8 @@ find_transportation:
     duration of the journey as well.
   expected_output: >
     The output should a bullet point list of the best options from each category (train, flight and car rental) in terms 
-    of price and duration of the trip.
+    of price and duration of the trip. For example: "United Airlines flight from New York to Paris for $500, 8 hours duration
+    at 8am - 4pm, Economy class, 1 stopover in London" or "Renting a Subaru for $100 a day from Car Rental Company X" etc...
   agents: 
     - train_finder
     - flight_finder
@@ -22,7 +23,9 @@ find_hotel:
     the user wants to know the best options from each category (hotel and AirBnB) in terms of price, quality and amenities.    
   expected_output: >
     The output should a bullet point list of the best 2 options from each category (hotel and AirBnB) in terms of 
-    price, quality and amenities.
+    price, quality and amenities. For example: "Hilton Hotel in Paris for $200 a night, 5 star, 2 queen beds, free breakfast,
+    free wifi, free parking, 24 hour room service" or "AirBnB in Paris for $100 a night, 2 bedroom, 1 bathroom, free wifi,
+    free parking, 24 hour check-in" etc...
   agents: 
     - hotel_finder
     - airbnb_finder
@@ -32,10 +35,11 @@ get_weather:
   description: >
     The user wants to know the weather forecast of {destination} in between {start_date} and {end_date} so that they can
     prepare for the trip accordingly. The user wants to know the temperature, humidity and precipitation forecast for each day.
-    And they want to know should they bring/wear for their trip (clothing, umberella etc). 
+    And they want to know should they bring/wear for their trip (clothing, umbrella etc). 
   expected_output: >
     The output should be a list of the weather forecast for each day in between {start_date} and {end_date} and the 
-    list of items that the user should bring/wear for the trip for each day.
+    list of items that the user should bring/wear for the trip for each day. For example: "Day 1: 70 degrees, 50% humidity,
+    0% precipitation, wear a t-shirt and shorts, bring an umbrella" etc...
   agents: 
     - weatherman
     - clothing_advisor
