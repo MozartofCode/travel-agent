@@ -159,9 +159,9 @@ class TravelAgentCrew():
 			- History: {subtask_results['get_history']}
 			"""
 
-			with open('Report.txt', 'w') as file:
+			with open('Report.md', 'w') as file:
 				file.write(report)
-			return "Report.txt"
+			return "Report.md"
 
 		return Task(
 			config=self.tasks_config['get_report'],
@@ -173,7 +173,7 @@ class TravelAgentCrew():
 				self.get_history(),
 			],
 			action=aggregate_results,
-			output_file='Report.txt'
+			output_file='Report.md'
 		)
 
 

@@ -16,19 +16,6 @@ def run_crew(starting_point: str, destination: str, start_date: str, end_date: s
     TravelAgentCrew().crew().kickoff(inputs=inputs)
 
 
-def create_report():
-    
-    # Uses the report.json file
-
-    return
-
-def create_presentation():
-    
-    # Uses the report.json file
-
-    return
-
-
 def train():
     """
     Train the crew for a given number of iterations.
