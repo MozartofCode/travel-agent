@@ -1,6 +1,6 @@
 # travel-agent
 
-This is an API built with Django (Python) and CrewAI Multi-Agents that helps people organize travel plans by:
+This is a CrewAI Multi-Agent system that helps people organize travel plans by:
 
 1- Finding the best transportation (flights, train, driving etc...)
 2- Finding the best hotels (price, quality etc. based on preference)
@@ -10,4 +10,4 @@ This is an API built with Django (Python) and CrewAI Multi-Agents that helps peo
     - Unique activities (surfing, fishing, hiking) related to the destination
     - List of Museums and historic sites as a way to discover the history of the destination
 5- Giving the brief history of the destinations
-6- Creating a travel report & presentation with all of this information
+6- Creating a travel report
